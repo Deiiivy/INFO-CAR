@@ -1,0 +1,57 @@
+.RegisterVehicle {
+    background-color: #0d355f;
+    padding: 8px;
+    border-radius: 20px;
+    max-height: 300px;
+    width: 90%;
+}
+
+.header-register {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.h3-header {
+    color: white;
+}
+
+.btn-conexion {
+    border: 2px solid #00b2f8;
+    background-color: transparent;
+    color: #00b2f8;
+    font-weight: bold;
+    width: 130px;
+    height: 30px;
+    border-radius: 40px;
+}
+
+.btn-conexion:hover {
+    cursor: pointer;
+}
+
+.body-container-register {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-register {
+    color: white;
+}
+
+.box-body-1 {
+    border-top: 1px solid purple;
+}
+
+.box-body-2 {
+    border-top: 1px solid #00b2f8;
+}
+
+.box-body-3 {
+    border-top: 1px solid palevioletred;
+}
+
+.estadisticas {
+    color: yellow;
+}
