@@ -1,5 +1,7 @@
 .RegisterVehicle {
-    background-color: #0d355f;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
     padding: 8px;
     border-radius: 20px;
     max-height: 300px;
@@ -14,7 +16,7 @@
 }
 
 .h3-header {
-    color: white;
+    color: black;
 }
 
 .btn-conexion {
@@ -37,7 +39,7 @@
 }
 
 .title-register {
-    color: white;
+    color: black;
 }
 
 .box-body-1 {

@@ -6,7 +6,7 @@ function RegisterVehicle() {
     <div className='RegisterVehicle'>
         <div className='header-register'>
             <h3 className='h3-header'>Registración del vehiculo</h3>
-            <button className='btn-conexion'>Conexión</button>
+            <button className='btn-conexion'>Ver más</button>
         </div>
 
         <div className='body-container-register'>

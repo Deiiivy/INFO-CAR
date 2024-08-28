@@ -3,6 +3,7 @@
   width: 500px;
   height: 600px;
   color: black;
+
 }
 .logInform {
   display: flex;
@@ -62,3 +63,21 @@ logInform p {
   text-decoration: underline;
 }
 
+.linkIniciarSesion{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 50px;
+  background-color: #007bff;
+  margin: 10px;
+}
+.linkIniciarSesion:hover{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #0056b3;
+
+}
+.error{
+  color: red;
+}
