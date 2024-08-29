@@ -17,7 +17,7 @@ function Home() {
   return (
     <>
     <div>
-    <div className='home'>
+    <div>
     {showNavBar && <NavBar onClose={handleNavBarClose}/>}
     </div>
       <div className={`homeHeader ${showNavBar ? 'opaque' : ''}`}>

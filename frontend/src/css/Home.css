@@ -1,6 +1,5 @@
 .home {
   display: flex;
-  flex-direction: row;
   width: 700px;
   height: 650px;
 }
@@ -11,7 +10,7 @@
   gap: 20px;
   max-height: 650px;
   padding: 20px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   background-color: white;
   border-radius: 10px;
   box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.1);
@@ -23,7 +22,6 @@
 
 .homeHeader {
   display: flex;
-  margin-top: -500px;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
