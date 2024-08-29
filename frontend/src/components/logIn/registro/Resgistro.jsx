@@ -111,7 +111,7 @@ function Registro() {
       {formSubmitted ? (
         <div className="registroExitoso">
           <p>¡Registro exitoso!</p>
-          <Link to={"/login"} className="linkRegistrarme">
+          <Link to={"/"} className="linkRegistrarme">
             Ir a Iniciar Sesión
           </Link>
         </div>

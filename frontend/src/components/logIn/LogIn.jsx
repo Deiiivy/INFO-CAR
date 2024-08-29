@@ -23,7 +23,7 @@ function LogIn() {
         const usuarioEnSesion = usuario
         localStorage.setItem("personaEnSesion", JSON.stringify(usuarioEnSesion));
         // Redirigir al usuario a la página principal
-        navigate('/');
+        navigate('/home');
       } else {
         setError('Contraseña incorrecta');
       }

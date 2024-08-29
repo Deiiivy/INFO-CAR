@@ -22,12 +22,12 @@ function NavBar({ onClose }) {
         <hr />
         <div className="opcion">
           <img src="./home.jpg" alt="home" />
-          <Link to={"/"} className="opcionLink">Home</Link> 
+          <Link to={"/home"} className="opcionLink">Home</Link> 
         </div>
         <hr />
         <div className="opcion">
           <img src="./cerrarSesion.jpg" alt="cerrar Sesión" />
-          <Link to={"/logIn "} className="opcionLink">Cerrar Sesión</Link> 
+          <Link to={"/"} className="opcionLink">Cerrar Sesión</Link> 
         </div>
         <hr />
       </div>

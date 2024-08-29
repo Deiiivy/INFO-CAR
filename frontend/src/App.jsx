@@ -14,8 +14,8 @@ function App() {
   <BrowserRouter>
     <main className="app-container">
       <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<LogIn/>}/>
+        <Route path='/home' element={<Home/>}/>
+        <Route path='/' element={<LogIn/>}/>
         <Route path='/registro' element={<Registro/>}/>
         <Route path='/navBar' element={<NavBar/>}/>
         <Route path='/miPerfil' element={<MiPerfil/>}/>
