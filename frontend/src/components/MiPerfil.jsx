@@ -1,34 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
+import "../css/MiPerfil.css";
+import NavBar from './NavBar';
 
 function MiPerfil() {
-  // Obtiene el nombre del usuario en sesión
-  const usuarioEnSesion = localStorage.getItem("personaEnSesion");
-  
-  // Obtiene los datos de todas las personas
-  const personaData = JSON.parse(localStorage.getItem("personaData")) || {};
+  const [showNavBar, setShowNavBar] = useState(false);
 
-  // Verifica si el usuario en sesión tiene datos almacenados
+  const handleMenuClick = () => {
+    setShowNavBar(prevState => !prevState);
+  };
+
+  const handleNavBarClose = () => {
+    setShowNavBar(false);
+  };
+
+  const usuarioEnSesion = JSON.parse(localStorage.getItem("personaEnSesion"));
+  console.log(usuarioEnSesion);
+
+  const personaData = JSON.parse(localStorage.getItem("personaData")) || {};
   const perfil = personaData[usuarioEnSesion];
 
   return (
-    <div className="miPerfilContainer">
-      {usuarioEnSesion ? (
-        <div className="perfilUsuario">
-          <h2>Perfil de {usuarioEnSesion}</h2>
-          <p><strong>Usuario:</strong> {usuarioEnSesion}</p>
-          <p><strong>Contraseña:</strong> {personaData[usuarioEnSesion].contraseña}</p>
-          <p><strong>Nombre del Vehículo:</strong> {personaData[usuarioEnSesion].nombreVehiculo}</p>
-          <p><strong>Matrícula:</strong> {personaData[usuarioEnSesion].matricula}</p>
-          <p><strong>Año:</strong> {personaData[usuarioEnSesion].año}</p>
-          <p><strong>Tipo de Gasolina:</strong> {personaData[usuarioEnSesion].tipoGasolina}</p>
-          <p><strong>Galones Actuales:</strong> {personaData[usuarioEnSesion].galones}</p>
-          <p><strong>Kilometraje:</strong> {personaData[usuarioEnSesion].kilometraje}</p>
-          <p><strong>Fecha de Ingreso:</strong> {new Date(personaData[usuarioEnSesion].fechaIngreso).toLocaleString()}</p>
+    <>
+      <div className={`miPerfilContainer ${showNavBar ? 'opaque' : ''}`}>
+        <div className='perfilHeader'>
+          <button onClick={handleMenuClick}>
+            <img src="./menu.png" className='menuLogo' alt="Menu" />
+          </button>
+          <img src="./Logo infocar.png" alt="Logo" />
         </div>
-      ) : (
-        <p>No se encontró información del usuario en sesión.</p>
-      )}
-    </div>
+        
+        {perfil ? (
+          <div className="perfilUsuario">
+            <h2>Mi Perfil</h2>
+            <p><strong>Usuario:</strong> {perfil.usuario}</p>
+            <p><strong>Nombre del Vehículo:</strong> {perfil.nombreVehiculo}</p>
+            <p><strong>Matrícula:</strong> {perfil.matricula}</p>
+            <p><strong>Año:</strong> {perfil.año}</p>
+            <p><strong>Tipo de Gasolina:</strong> {perfil.tipoGasolina}</p>
+            <p><strong>Galones Actuales:</strong> {perfil.galones}</p>
+            <p><strong>Kilometraje:</strong> {perfil.kilometraje}</p>
+            <p><strong>Fecha de Ingreso:</strong> {new Date(perfil.fechaIngreso).toLocaleString()}</p>
+          </div>
+        ) : (
+          <p>No se encontró información del usuario.</p>
+        )}
+      </div>
+
+      {showNavBar && <NavBar onClose={handleNavBarClose} />} 
+    </>
   );
 }
 

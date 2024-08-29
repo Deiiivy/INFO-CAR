@@ -10,12 +10,15 @@ function Home() {
   const handleMenuClick = () => {
     setShowNavBar(prevState => !prevState);
   };
+  const handleNavBarClose = () => {
+    setShowNavBar(false);
+  };
 
   return (
     <>
     <div>
     <div className='home'>
-    {showNavBar && <NavBar />}
+    {showNavBar && <NavBar onClose={handleNavBarClose}/>}
     </div>
       <div className={`homeHeader ${showNavBar ? 'opaque' : ''}`}>
         <button onClick={handleMenuClick}>

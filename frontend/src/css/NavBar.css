@@ -1,62 +1,76 @@
-.navBarContainer{
+/* NavBar.css */
+.navBarContainer {
+    position: fixed; /* Asegura que el NavBar esté fijo en la pantalla */
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    width: 200px; /* Ajusta el ancho según tu diseño */
     background-color: white;
     border: 1px solid dimgrey;
-    box-shadow:  10px 10px 10px ;
-    height: 600px;
-    width: 200px;
-}
-.navBarHeader{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    background-color: rgb(223, 217, 217);
-}
-.buttonHeader{
-    width: 98%;
-    display: flex;
-    flex-direction: row-reverse;
-}
-.userHeader{
-    display: flex;
-    justify-content: center;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
+    z-index: 1000; /* Asegura que el NavBar esté por encima de otros elementos */
+    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es más largo que la altura */
 }
 
-.navBarHeader button{
+.navBarHeader {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(223, 217, 217);
+    padding: 10px;
+}
+
+.buttonHeader {
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+}
+
+.userHeader {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navBarHeader button {
     background-color: grey;
     color: white;
     border: none;
     width: 25px;
-    height: 20px;
-    margin-top: 5px;
-}
-.userHeader{
-    color: blue;
-    font-size: 20px;    
-}
-.navBarOptions{
-    display: flex;
-    flex-direction: column;
-}
-.navBarContainer hr{
-    width: 100%;
+    height: 25px; /* Ajusta la altura del botón */
+    font-size: 16px; /* Ajusta el tamaño del texto del botón */
+    cursor: pointer; /* Cambia el cursor para indicar que el botón es clicable */
 }
 
-.opcion{
+.userHeader {
+    color: blue;
+    font-size: 20px;
+}
+
+.navBarOptions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.navBarContainer hr {
     width: 100%;
+    border: 0; /* Elimina el borde predeterminado */
+    border-top: 1px solid #ddd; /* Agrega una línea superior para separar las opciones */
+}
+
+.opcion {
     display: flex;
     align-items: center;
-    margin-top: 10px;
-    
+    margin: 10px 0; /* Espacio entre las opciones */
 }
+
 .opcion img {
     width: 30px;
-    height: 30px ;
+    height: 30px;
     margin-right: 10px;
 }
-.opcionLink{
-    background-color: white;
-    width: 100%;
+
+.opcionLink {
     text-decoration: none;
     color: black;
     font-size: 15px;
+    flex-grow: 1; /* Asegura que el enlace ocupe el espacio restante */
 }
