@@ -49,7 +49,7 @@
 @media (max-width: 1024px) {
   .home {
     width: 100%;
-    height: auto;
+    
     flex-direction: column;
   }
 
@@ -61,7 +61,7 @@
 @media (max-width: 768px) {
   .home {
     width: 100%;
-    height: auto;
+    
     flex-direction: column;
   }
 
