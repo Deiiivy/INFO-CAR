@@ -1,46 +1,72 @@
-.home{
+.home {
   display: flex;
   flex-direction: row;
   width: 700px;
   height: 650px;
 }
 
-
 .home-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    max-height: 650px;
-    padding: 20px;
-    overflow-y: scroll;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-height: 650px;
+  padding: 20px;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 5px 8px 16px rgba(0, 0, 0, 0.1);
+}
 
-  }
-  .registerVehicle{
-    max-height: 2000px;
-    
-  }
-  .homeHeader{
-    display: flex;
-    margin-top: -300px;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .menuLogo{
-    width: 30px;
-    height: 30px;
-  }
-  .homeHeader button{
-    background-color: white;
-    padding: 3px;
-    width: 40px;
-    height: 40px;
+.registerVehicle {
+  max-height: 2000px;
+}
+
+.homeHeader {
+  display: flex;
+  margin-top: -300px;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.homeHeader button {
+  background-color: white;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+}
+
+.opaque {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+  .home {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
   }
 
-  .opaque {
-    opacity: 0.5; 
-    pointer-events: none; 
+  .home-container {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 768px) {
+  .home {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+
+  .home-container {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}

@@ -39,7 +39,6 @@ function MiPerfil() {
             <p><strong>Tipo de Gasolina:</strong> {perfil.tipoGasolina}</p>
             <p><strong>Galones Actuales:</strong> {perfil.galones}</p>
             <p><strong>Kilometraje:</strong> {perfil.kilometraje}</p>
-            <p><strong>Fecha de Ingreso:</strong> {new Date(perfil.fechaIngreso).toLocaleString()}</p>
           </div>
         ) : (
           <p>No se encontró información del usuario.</p>

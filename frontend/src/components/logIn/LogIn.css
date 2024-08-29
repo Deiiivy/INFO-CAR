@@ -1,10 +1,13 @@
-.logInContainer{
+.logInContainer {
   background-color: white;
-  width: 500px;
-  height: 600px;
+  width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+  max-width: 500px;
+  height: auto; /* Ajusta la altura automáticamente */
   color: black;
-
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  padding: 20px; /* Añade un padding para pantallas más pequeñas */
 }
+
 .logInform {
   display: flex;
   flex-direction: column;
@@ -21,12 +24,12 @@
 
 .logInform input[type='text'],
 .logInform input[type='password'] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
 }
 
 .logInform button {
@@ -46,7 +49,7 @@
   background-color: #0056b3;
 }
 
-logInform p {
+.logInform p {
   margin-top: 20px;
   font-size: 14px;
   color: #333;
@@ -63,7 +66,7 @@ logInform p {
   text-decoration: underline;
 }
 
-.linkIniciarSesion{
+.linkIniciarSesion {
   text-decoration: none;
   color: white;
   padding: 10px;
@@ -71,13 +74,70 @@ logInform p {
   background-color: #007bff;
   margin: 10px;
 }
-.linkIniciarSesion:hover{
+
+.linkIniciarSesion:hover {
   text-decoration: none;
   color: white;
   padding: 10px;
   background-color: #0056b3;
-
 }
-.error{
+
+.error {
   color: red;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .logInContainer {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .logInform {
+    max-width: 100%;
+    padding: 15px;
+  }
+
+  .logInform input[type='text'],
+  .logInform input[type='password'] {
+    font-size: 14px;
+  }
+
+  .logInform button {
+    font-size: 14px;
+  }
+
+  .logInform p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logInContainer {
+    width: 95%;
+    padding: 5px;
+  }
+
+  .logInform {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .logInform input[type='text'],
+  .logInform input[type='password'] {
+    font-size: 12px;
+  }
+
+  .logInform button {
+    font-size: 12px;
+  }
+
+  .logInform p {
+    font-size: 10px;
+  }
+
+  .linkIniciarSesion {
+    font-size: 12px;
+    padding: 8px;
+  }
 }

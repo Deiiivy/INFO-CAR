@@ -1,48 +1,110 @@
+/* Estilos generales */
+
 .miPerfilContainer {
-    width: 700px;
-    height: 650px;
-    margin: 0 auto; 
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    overflow-y: auto; 
+  width: 700px;
+  height: 650px;
+  margin: 0 auto; 
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  overflow-y: auto; 
+}
+
+.perfilUsuario {
+  font-family: Arial, sans-serif;
+  color: #333; 
+  border: 1px outset grey;
+  box-shadow: 10px 10px 20px;
+  padding: 10px;
+}
+
+.perfilUsuario h2 {
+  margin-bottom: 20px;
+  color: #4a90e2; 
+}
+
+.perfilUsuario p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.perfilHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menuLogo {
+  width: 30px;
+  height: 30px;
+}
+
+.homeHeader button {
+  background-color: white;
+  padding: 3px;
+  width: 40px;
+  height: 40px;
+}
+
+.opaque {
+  opacity: 0.5; 
+  pointer-events: none; 
+}
+
+/* Estilos responsivos */
+
+/* Para tablets (768px a 1024px) */
+@media (max-width: 1024px) {
+  .miPerfilContainer {
+    width: 90%;
+    height: auto;
   }
-  
-  .perfilUsuario {
-    font-family: Arial, sans-serif;
-    color: #333; 
-    border: 1px outset grey;
-    box-shadow: 10px 10px 20px;
+
+  .perfilUsuario p {
+    font-size: 14px;
+  }
+
+  .homeHeader button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .menuLogo {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* Para teléfonos móviles (hasta 767px) */
+@media (max-width: 767px) {
+  .miPerfilContainer {
+    width: 95%;
+    height: auto;
     padding: 10px;
   }
-  
+
+  .perfilUsuario {
+    font-size: 14px;
+    padding: 8px;
+  }
+
   .perfilUsuario h2 {
-    margin-bottom: 20px;
-    color: #4a90e2; 
+    font-size: 18px;
   }
-  
+
   .perfilUsuario p {
-    margin: 10px 0;
-    font-size: 16px;
+    font-size: 14px;
   }
-  .perfilHeader{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-  }
-  .menuLogo{
+
+  .homeHeader button {
     width: 30px;
     height: 30px;
   }
-  .homeHeader button{
-    background-color: white;
-    padding: 3px;
-    width: 40px;
-    height: 40px;
+
+  .menuLogo {
+    width: 20px;
+    height: 20px;
   }
-  .opaque {
-    opacity: 0.5; 
-    pointer-events: none; 
-  }
+}

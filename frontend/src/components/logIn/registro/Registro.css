@@ -1,77 +1,125 @@
-.registroContainer{
-    background-color: white;
-    width: 700px;
-    height: 650px;
-    color: black;
-    overflow-y:scroll ;
-    overflow-x: hidden;
-    margin: 10px;
-
-  }
-  .registroExitoso{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    width: 700px;
-    height: 650px;
-    color: black;
-    overflow-y:scroll ;
-    overflow-x: hidden;
-    margin: 10px;
-    align-items: center;
-    color: green;
-  }
-  .registroContainer img{
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  .registroForm  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin:  auto;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .registroForm input {
-    width: 650px;
-    align-items: center;
-    padding: 5px;
-    margin: 5  px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: whitesmoke;
-    background-color: rgb(182, 177, 177);
-}
-.registroForm p{
-    align-items: flex-start;
+.registroContainer {
+  background-color: white;
+  width: 90%; /* Ajusta el ancho para pantallas más pequeñas */
+  max-width: 700px;
+  height: auto; /* Ajusta la altura automáticamente */
+  color: black;
+  overflow-y: auto; /* Permite el scroll vertical */
+  overflow-x: hidden;
+  margin: 10px auto; /* Centra el contenedor horizontalmente */
+  padding: 10px; /* Añade un padding para pantallas más pequeñas */
 }
 
-.error{
+.registroExitoso {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 700px;
+  height: auto; /* Ajusta la altura automáticamente */
+  color: black;
+  overflow-y: auto; /* Permite el scroll vertical */
+  overflow-x: hidden;
+  margin: 10px auto; /* Centra el contenedor horizontalmente */
+  align-items: center;
+  color: green;
+  padding: 10px; /* Añade un padding para pantallas más pequeñas */
+}
+
+.registroContainer img {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.registroForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto; /* Ajusta la altura automáticamente */
+  padding: 20px; /* Aumenta el padding para pantallas más pequeñas */
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.registroForm input {
+  width: 100%;
+  max-width: 650px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: whitesmoke;
+  background-color: rgb(182, 177, 177);
+}
+
+.registroForm p {
+  align-items: flex-start;
+}
+
+.error {
   color: red;
 }
-  
-  .registroForm button:hover {
-    background-color: #0056b3;
+
+.registroForm button:hover {
+  background-color: #0056b3;
+}
+
+.linkRegistrarme {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+}
+
+.linkRegistrarme:hover {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .registroContainer, .registroExitoso {
+    width: 95%;
+    margin: 5px auto;
   }
-  .linkRegistrarme{
-    text-decoration: none;
-    color: white;
+
+  .registroForm {
+    padding: 15px;
+  }
+
+  .registroForm input {
+    font-size: 14px;
+  }
+
+  .linkRegistrarme {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .registroContainer, .registroExitoso {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .registroForm {
     padding: 10px;
-    margin: 5px;
-    background-color: #007bff;
   }
-  .linkRegistrarme:hover{
-    text-decoration: none;
-    color: white;
-    padding: 10px;
-    
-    background-color: #0056b3;
+
+  .registroForm input {
+    font-size: 12px;
   }
+
+  .linkRegistrarme {
+    font-size: 12px;
+    padding: 8px;
+  }
+}

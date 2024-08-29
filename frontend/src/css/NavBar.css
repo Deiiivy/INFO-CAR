@@ -1,15 +1,14 @@
-/* NavBar.css */
 .navBarContainer {
-    position: fixed; /* Asegura que el NavBar esté fijo en la pantalla */
+    position: fixed; 
     top: 0;
     left: 0;
-    height: 100vh; /* Ocupa toda la altura de la pantalla */
-    width: 200px; /* Ajusta el ancho según tu diseño */
+    height: 100vh; 
+    width: 200px; 
     background-color: white;
     border: 1px solid dimgrey;
-    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2); /* Ajusta la sombra según sea necesario */
-    z-index: 1000; /* Asegura que el NavBar esté por encima de otros elementos */
-    overflow-y: auto; /* Permite el desplazamiento vertical si el contenido es más largo que la altura */
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.2); 
+    z-index: 1000; 
+    overflow-y: auto; 
 }
 
 .navBarHeader {
@@ -21,7 +20,7 @@
 
 .buttonHeader {
     display: flex;
-    justify-content: flex-end; /* Alinea el botón a la derecha */
+    justify-content: flex-end; 
 }
 
 .userHeader {
@@ -34,9 +33,9 @@
     color: white;
     border: none;
     width: 25px;
-    height: 25px; /* Ajusta la altura del botón */
-    font-size: 16px; /* Ajusta el tamaño del texto del botón */
-    cursor: pointer; /* Cambia el cursor para indicar que el botón es clicable */
+    height: 25px; 
+    font-size: 16px; 
+    cursor: pointer; 
 }
 
 .userHeader {
@@ -52,14 +51,14 @@
 
 .navBarContainer hr {
     width: 100%;
-    border: 0; /* Elimina el borde predeterminado */
-    border-top: 1px solid #ddd; /* Agrega una línea superior para separar las opciones */
+    border: 0; 
+    border-top: 1px solid #ddd; 
 }
 
 .opcion {
     display: flex;
     align-items: center;
-    margin: 10px 0; /* Espacio entre las opciones */
+    margin: 10px 0; 
 }
 
 .opcion img {
@@ -72,5 +71,5 @@
     text-decoration: none;
     color: black;
     font-size: 15px;
-    flex-grow: 1; /* Asegura que el enlace ocupe el espacio restante */
+    flex-grow: 1; 
 }
