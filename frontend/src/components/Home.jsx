@@ -31,10 +31,10 @@ function Home() {
       </div>
 
       <div className={`home-container ${showNavBar ? 'opaque' : ''}`}>
-        <FunctionCar title="Vigilancia" className='funcion' />
-        <FunctionCar title="Diagnostico del vehiculo" className='funcion' />
+        <FunctionCar title="Diagnostico del Motor" className='funcion' url="/diagnostico" />
         <FunctionCar title="Bateria" className='funcion' url="/bateria" />
         <FunctionCar title="Combustible" className='funcion' url="/combustible" />
+        
       </div>
       </div>
     </>
