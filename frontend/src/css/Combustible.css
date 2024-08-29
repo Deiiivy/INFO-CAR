@@ -1,0 +1,54 @@
+.combustible-container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .combustible-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .current-data, .input-section, .resultado {
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .calcular-btn {
+    background-color: #76c7c0;
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
