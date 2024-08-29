@@ -35,18 +35,6 @@ function Home() {
         <FunctionCar title="Diagnostico del vehiculo" className='funcion' />
         <FunctionCar title="Tablero de instrumentos" className='funcion' />
         <FunctionCar title="Combustible" className='funcion' />
-        <FunctionCar title="Registros de conducción" className='funcion' />
-        <FunctionCar title="Historial de conducción" className='funcion' />
-        <FunctionCar title="Datos de fabricante" className='funcion' />
-        <FunctionCar title="Estilo de conducción" className='funcion' />
-        <FunctionCar title="Mantenimiento" className='funcion' />
-        <FunctionCar title="FAQ" className='funcion' />
-        <FunctionCar title="Configuración" className='funcion' />
-        <FunctionCar title="HUD" className='funcion' />
-        <FunctionCar title="Estacionamiento" className='funcion' />
-        <FunctionCar title="Compra" className='funcion' />
-        <FunctionCar title="Blackbox" className='funcion' />
-        <FunctionCar title="Diagnostico del motor" className='funcion' />
       </div>
       </div>
     </>
