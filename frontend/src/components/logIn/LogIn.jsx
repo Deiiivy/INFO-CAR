@@ -20,6 +20,8 @@ function LogIn() {
     if (personaData && personaData[usuario]) {
       // Comparar la contraseña
       if (personaData[usuario].contraseña === contraseña) {
+        const usuarioEnSesion = usuario
+        localStorage.setItem("personaEnSesion", JSON.stringify(usuarioEnSesion));
         // Redirigir al usuario a la página principal
         navigate('/');
       } else {

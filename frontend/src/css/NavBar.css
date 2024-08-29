@@ -1,0 +1,62 @@
+.navBarContainer{
+    background-color: white;
+    border: 1px solid dimgrey;
+    box-shadow:  10px 10px 10px ;
+    height: 600px;
+    width: 200px;
+}
+.navBarHeader{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: rgb(223, 217, 217);
+}
+.buttonHeader{
+    width: 98%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.userHeader{
+    display: flex;
+    justify-content: center;
+}
+
+.navBarHeader button{
+    background-color: grey;
+    color: white;
+    border: none;
+    width: 25px;
+    height: 20px;
+    margin-top: 5px;
+}
+.userHeader{
+    color: blue;
+    font-size: 20px;    
+}
+.navBarOptions{
+    display: flex;
+    flex-direction: column;
+}
+.navBarContainer hr{
+    width: 100%;
+}
+
+.opcion{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.opcion img {
+    width: 30px;
+    height: 30px ;
+    margin-right: 10px;
+}
+.opcionLink{
+    background-color: white;
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}

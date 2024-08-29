@@ -1,0 +1,25 @@
+.miPerfilContainer {
+    padding: 20px;
+  }
+  
+  .perfilUsuario {
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background: #f9f9f9;
+  }
+  
+  .perfilUsuario h2 {
+    color: #4a90e2;
+  }
+  
+  .perfilUsuario p {
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  .perfilUsuario p strong {
+    color: #333;
+  }
+  

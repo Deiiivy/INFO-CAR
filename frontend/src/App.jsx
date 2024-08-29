@@ -7,6 +7,8 @@ import Home from './components/Home'
 import RegisterVehicle from './components/RegisterVehicle'
 import LogIn from './components/logIn/LogIn'
 import Registro from './components/logIn/registro/Resgistro'
+import NavBar from './components/NavBar'
+import MiPerfil from './components/MiPerfil'
 function App() {
   return (
   <BrowserRouter>
@@ -15,6 +17,10 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/login' element={<LogIn/>}/>
         <Route path='/registro' element={<Registro/>}/>
+        <Route path='/navBar' element={<NavBar/>}/>
+        <Route path='/miPerfil' element={<MiPerfil/>}/>
+        
+        
       </Routes>
     </main>
     
