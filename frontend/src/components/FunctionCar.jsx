@@ -1,12 +1,12 @@
-import React from 'react'
-import '../css/FunctionCar.css'
+import React from 'react';
+import '../css/FunctionCar.css';
 
-function FunctionCar({ title, img, url }) {
+function FunctionCar({ title, img }) {
     return (
-      <a href={url} className="function-car">
+      <div >
         <h2>{title}</h2>
-      </a>
+      </div>
     );
-  }
-  
-export default FunctionCar
+}
+
+export default FunctionCar;
